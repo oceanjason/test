@@ -7,172 +7,73 @@
 *{box-sizing:border-box;margin:0;padding:0}
 i{font-style:normal}
 html,body{width:1587px;height:1123px;background:var(--cream)}
-body{font-family:'Noto Sans TC',sans-serif;color:var(--navy);position:relative;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.dot{position:absolute;width:16px;height:16px;border-radius:50%;opacity:.85}
-header{background:var(--navy);padding:34px 48px 22px;position:relative;border-bottom:14px solid var(--gold)}
-.kicker{color:var(--gold);font-weight:700;font-size:24px;letter-spacing:2px}
-.title{display:flex;align-items:baseline;gap:22px;margin-top:2px}
-.title h1{color:#fff;font-weight:900;font-size:110px;line-height:1.02;letter-spacing:4px}
-.title h2{color:var(--gold);font-weight:900;font-size:44px}
-.tagline{color:#C9D2F2;font-weight:700;font-size:24px;margin-top:6px}
-.tagline b{color:#fff;background:var(--red);border-radius:8px;padding:0 10px;margin:0 4px}
-.hosts{position:absolute;right:48px;top:40px;background:var(--navy2);border:3px solid var(--gold);border-radius:18px;padding:14px 22px 16px}
-.hosts .lbl{color:var(--gold);font-weight:700;font-size:20px;margin-bottom:6px}
-.host{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:22px;margin-top:6px}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--navy);overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+header{background:var(--navy);border-bottom:14px solid var(--gold);padding:20px 44px 22px;display:flex;align-items:center;justify-content:space-between}
+.title{display:flex;align-items:baseline;gap:26px}
+.title h1{color:#fff;font-weight:900;font-size:104px;line-height:1.05;letter-spacing:4px}
+.title h2{color:var(--gold);font-weight:900;font-size:46px}
+.title b{color:#fff;background:var(--red);border-radius:12px;padding:2px 16px;font-size:34px;font-weight:900;align-self:center}
+.hosts{display:flex;flex-direction:column;gap:6px;background:var(--navy2);border:3px solid var(--gold);border-radius:18px;padding:12px 24px}
+.host{display:flex;align-items:center;gap:12px;color:#fff;font-weight:700;font-size:26px}
 .badge{display:inline-grid;place-items:center;border-radius:50%;color:#fff;font-weight:900}
-.host .badge{width:32px;height:32px;font-size:19px}
-.chips{display:flex;gap:14px;padding:20px 44px 0}
-.chip{flex:auto;display:flex;align-items:center;gap:12px;background:#fff;border:3px solid var(--navy);border-radius:40px;padding:7px 16px 7px 7px;font-weight:700;font-size:21px;white-space:nowrap}
-.chip span{color:#fff;border-radius:24px;padding:4px 16px;font-size:19px;font-weight:900}
-.sec{display:flex;align-items:center;gap:14px;padding:20px 44px 12px}
-.sec h3{font-weight:900;font-size:40px;line-height:1}
-.sec .num{width:52px;height:52px;border-radius:14px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-size:30px;font-weight:900}
-.sec p{color:var(--gray);font-weight:700;font-size:20px;margin-left:6px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:0 44px;position:relative}
-.step{background:#fff;border:3px solid var(--navy);border-radius:22px;padding:14px 12px 16px;text-align:center;position:relative}
-.step .tag{display:inline-block;color:#fff;font-weight:900;font-size:18px;letter-spacing:1px;border-radius:20px;padding:3px 14px;position:absolute;left:12px;top:12px}
-.step svg{display:block;width:100%;height:auto;margin-top:14px}
-.step h4{font-weight:900;font-size:23px;margin-top:4px;white-space:nowrap}
-.step p{color:var(--gray);font-weight:500;font-size:17px;line-height:1.45;margin-top:6px}
-.arrow{position:absolute;top:50%;width:30px;height:30px;margin-top:-15px;border-radius:50%;background:var(--gold);border:3px solid var(--navy);z-index:2;display:grid;place-items:center}
-.scores{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:0 44px}
-.card{background:#fff;border:5px solid;border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
-.card .hd{color:#fff;font-weight:900;font-size:23px;padding:7px 18px;display:flex;align-items:center;gap:10px}
-.card .hd .badge{width:34px;height:34px;background:#fff;font-size:21px}
-.card .bd{padding:12px 18px 14px;display:flex;flex-direction:column;flex:1}
-.top{display:flex;align-items:center;gap:14px}
-.pts{display:flex;align-items:baseline;gap:6px;font-weight:900}
-.pts b{font-size:84px;line-height:.9}
-.pts i{font-style:normal;font-size:34px}
-.card .how{font-weight:700;font-size:18px;line-height:1.5;flex:1}
-.card .how em{font-style:normal;background:#FFE7A3;padding:0 4px;border-radius:4px}
-.sample{margin-top:10px;border:2px dashed;border-radius:12px;padding:10px 8px;text-align:center;font-weight:800;font-size:22px;white-space:nowrap}
-.sample small{display:block;font-size:14px;font-weight:700;color:var(--gray);margin-bottom:2px}
-.rules{display:grid;grid-template-columns:1.25fr 1fr;gap:20px;padding:18px 44px 0}
-.rulebox{background:#fff;border:3px solid var(--navy);border-radius:22px;padding:14px 22px}
-.rulebox li{list-style:none;display:flex;gap:12px;align-items:flex-start;font-weight:700;font-size:20px;line-height:1.4;margin:3px 0}
-.rulebox li .ic{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;font-size:18px;margin-top:1px}
-.total{display:flex;align-items:center;justify-content:space-between;background:var(--gold);border-radius:14px;padding:6px 18px;margin-top:10px;font-weight:900;font-size:24px}
-.total b{font-size:34px}
-.board{background:var(--navy);border:5px solid var(--gold);border-radius:22px;padding:14px 24px;color:#fff;position:relative}
-.board .t{color:var(--gold);font-weight:900;font-size:19px;letter-spacing:1px;margin-bottom:4px}
-.row{display:grid;grid-template-columns:1fr 40px 70px;align-items:center;font-weight:700;font-size:21px;padding:2px 0}
-.row .p{text-align:right;color:var(--gold);font-weight:900;white-space:nowrap}
-.row.sum{border-top:2px solid #4A5AA0;margin-top:4px;padding-top:9px;color:#C9D2F2}
-.row.sum .p{font-size:28px}
-.notes{margin:18px 44px 0;background:var(--navy);border-radius:22px;padding:14px 26px;color:#fff}
-.note{display:flex;gap:14px;align-items:flex-start;font-weight:500;font-size:20px;line-height:1.45;margin:4px 0}
-.note span{flex:none;border-radius:20px;padding:2px 14px;font-weight:900;font-size:18px;color:var(--navy);margin-top:1px}
-.go{text-align:center;font-weight:900;font-size:28px;margin-top:10px;letter-spacing:2px}
-.go span{color:var(--red)}
-
-/* landscape overrides */
-header{padding:22px 44px 16px}
-.title{margin-top:0}
-.title h1{font-size:88px;line-height:1.05}
-.title h2{font-size:42px}
-.tagline{margin-top:2px}
-.hosts{top:auto;bottom:24px;display:flex;align-items:center;gap:26px;padding:14px 24px}
-.hosts .lbl{margin:0}
-.host{margin:0}
-.chips{padding:14px 44px 0}
-.chip{font-size:22px}
-.sec{padding:12px 44px 8px}
-.sec h3{font-size:36px}
-.sec .num{width:46px;height:46px;font-size:26px}
-.steps{gap:26px}
-.step{padding:12px 12px 14px}
-.step svg{width:auto;height:228px;margin:14px auto 0}
-.step h4{font-size:24px}
-.step p{font-size:18px;margin-top:4px}
-.scores{grid-template-columns:1fr 1fr 1fr 1.32fr;gap:20px}
-.pts b{font-size:76px}
-.ex{gap:20px}
-.ex span svg{margin:0 2px}
-.sample{font-size:21px}
-.board{display:flex;flex-direction:column;padding:12px 22px 14px}
-.board li{list-style:none;display:flex;gap:10px;align-items:center;font-weight:700;font-size:19px;margin:3px 0}
-.board li .ic{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;font-size:15px}
-.ex{display:flex;align-items:center;gap:14px;border-top:2px solid #4A5AA0;margin-top:8px;padding-top:8px;font-weight:700;font-size:18px;white-space:nowrap}
-.ex .t{margin:0}
-.ex b{color:var(--gold);font-weight:900}
-.ex svg{vertical-align:-3px}
-.total{color:var(--navy);margin-top:auto}
-.bottom{display:flex;gap:20px;align-items:stretch;margin:14px 44px 0}
-.notes{margin:0;flex:1;padding:10px 24px}
-.note{font-size:19px;margin:3px 0}
-.go{margin:0;display:grid;place-items:center;background:var(--gold);border-radius:22px;padding:0 26px;font-size:26px;line-height:1.3;text-align:center}
-.card .how{font-size:21px;line-height:1.55}
-.sec{padding:22px 44px 14px}
-.top{flex:1;align-items:flex-start}
-.ex{margin-bottom:12px}
-.bottom{margin-top:20px}
-.sample{padding:14px 8px;font-size:23px}
-.total b{font-size:32px}
+.host .badge{width:36px;height:36px;font-size:21px}
+.hosts .lbl{color:var(--gold);font-size:20px;font-weight:700}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;padding:28px 44px 0;position:relative}
+.step{background:#fff;border:4px solid var(--navy);border-radius:24px;padding:14px 12px 20px;text-align:center;position:relative}
+.step .tag{color:#fff;font-weight:900;font-size:30px;border-radius:50%;width:52px;height:52px;display:grid;place-items:center;position:absolute;left:14px;top:14px}
+.step svg{display:block;height:270px;width:auto;margin:20px auto 0}
+.step h4{font-weight:900;font-size:42px;margin-top:6px;white-space:nowrap}
+.step p{color:var(--gray);font-weight:700;font-size:28px;margin-top:6px;white-space:nowrap}
+.arrow{position:absolute;top:calc(50% + 13px);width:36px;height:36px;margin-top:-18px;border-radius:50%;background:var(--gold);border:3px solid var(--navy);z-index:2;display:grid;place-items:center}
+.row2{display:grid;grid-template-columns:1fr 1fr 1fr 1.55fr;gap:24px;padding:26px 44px 0}
+.card{background:#fff;border:5px solid;border-radius:24px;overflow:hidden;text-align:center}
+.card .hd{color:#fff;font-weight:900;font-size:38px;padding:12px 12px;display:flex;align-items:center;justify-content:center;gap:12px}
+.card .hd .badge{width:46px;height:46px;background:#fff;font-size:28px}
+.card .bd{font-weight:900;font-size:50px;padding:34px 10px}
+.pass{background:var(--gold);border:5px solid var(--navy);border-radius:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;line-height:1.1}
+.pass .s{font-size:40px}
+.pass .s em{font-style:normal;font-size:68px;color:var(--red)}
+.pass .b{font-size:80px;margin-top:4px}
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:26px 44px 0}
+.note{background:var(--navy);color:#fff;border-radius:22px;padding:16px 24px;display:flex;gap:16px;align-items:center;font-weight:700;font-size:32px;white-space:nowrap}
+.note span{border-radius:22px;padding:2px 18px;font-weight:900;font-size:28px;color:var(--navy)}
 </style></head>
 <body>
 <svg width="0" height="0" style="position:absolute"><defs><g id="art"><rect width="1920" height="1080" fill="#FFF7E8"/><circle cx="1700" cy="60" r="9" fill="#FFC93C" opacity=".8"/><circle cx="1820" cy="120" r="9" fill="#FF6B5B" opacity=".8"/><circle cx="1640" cy="150" r="9" fill="#17A99B" opacity=".8"/><circle cx="40" cy="1050" r="9" fill="#FFC93C" opacity=".8"/><circle cx="1880" cy="1040" r="9" fill="#FF6B5B" opacity=".8"/><circle cx="1895" cy="990" r="9" fill="#17A99B" opacity=".8"/><rect width="1920" height="150" fill="#1F2A5C"/><path d="M0,150 L1920,150 L1920,162 L0,162Z" fill="#FFC93C"/><text x="80" y="100" font-size="64" fill="#fff" font-weight="900" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >眼明手快</text><text x="360" y="98" font-size="48" fill="#FFC93C" font-weight="700" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >任務圖解</text><text x="1840" y="96" font-size="32" fill="#C9D2F2" font-weight="600" text-anchor="end" font-family="'Noto Sans TC',sans-serif" >兒童新樂園 3F｜幸福碰碰車</text><rect x="60" y="190" width="420" height="580" rx="28" fill="#fff" stroke="#1F2A5C" stroke-width="4"/><rect x="84" y="210" width="128" height="44" rx="22" fill="#FF6B5B"/><text x="148" y="241" font-size="24" fill="#fff" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" letter-spacing="1">STEP 1</text><text x="270" y="662" font-size="36" fill="#1F2A5C" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >手機收好・上車出發</text><text x="270" y="708" font-size="25" fill="#5B6275" font-weight="500" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >繫好安全帶，開車中</text><text x="270" y="742" font-size="25" fill="#5B6275" font-weight="500" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >不可拍照或抄寫</text><circle cx="500" cy="470" r="24" fill="#FFC93C" stroke="#1F2A5C" stroke-width="3"/><path d="M494,458 l12,12 l-12,12" stroke="#1F2A5C" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="520" y="190" width="420" height="580" rx="28" fill="#fff" stroke="#1F2A5C" stroke-width="4"/><rect x="544" y="210" width="128" height="44" rx="22" fill="#17A99B"/><text x="608" y="241" font-size="24" fill="#fff" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" letter-spacing="1">STEP 2</text><text x="730" y="662" font-size="36" fill="#1F2A5C" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >邊開邊看・用腦記住</text><text x="730" y="708" font-size="25" fill="#5B6275" font-weight="500" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >關主隨機現身場邊舉牌，</text><text x="730" y="742" font-size="25" fill="#5B6275" font-weight="500" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >看到牌子就要記住</text><circle cx="960" cy="470" r="24" fill="#FFC93C" stroke="#1F2A5C" stroke-width="3"/><path d="M954,458 l12,12 l-12,12" stroke="#1F2A5C" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="980" y="190" width="420" height="580" rx="28" fill="#fff" stroke="#1F2A5C" stroke-width="4"/><rect x="1004" y="210" width="128" height="44" rx="22" fill="#F5A623"/><text x="1068" y="241" font-size="24" fill="#fff" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" letter-spacing="1">STEP 3</text><text x="1190" y="662" font-size="36" fill="#1F2A5C" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >下車集合・合寫答案</text><text x="1190" y="708" font-size="25" fill="#5B6275" font-weight="500" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >全隊一起討論，</text><text x="1190" y="742" font-size="25" fill="#5B6275" font-weight="500" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >1 分鐘內完成答案卡</text><circle cx="1420" cy="470" r="24" fill="#FFC93C" stroke="#1F2A5C" stroke-width="3"/><path d="M1414,458 l12,12 l-12,12" stroke="#1F2A5C" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="1440" y="190" width="420" height="580" rx="28" fill="#fff" stroke="#1F2A5C" stroke-width="4"/><rect x="1464" y="210" width="128" height="44" rx="22" fill="#1F2A5C"/><text x="1528" y="241" font-size="24" fill="#fff" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" letter-spacing="1">STEP 4</text><text x="1650" y="662" font-size="36" fill="#1F2A5C" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >對答案・答對才得分</text><text x="1650" y="708" font-size="25" fill="#5B6275" font-weight="500" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >答對得分、答錯 0 分，</text><text x="1650" y="742" font-size="25" fill="#5B6275" font-weight="500" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >完成後前往下一關</text><rect x="110" y="300" width="84" height="146" rx="16" fill="#1F2A5C"/><rect x="120" y="314" width="64" height="112" rx="6" fill="#8FB8F0"/><circle cx="152" cy="373" r="68" fill="none" stroke="#FF6B5B" stroke-width="12"/><line x1="104" y1="325" x2="200" y2="421" stroke="#FF6B5B" stroke-width="12"/><rect x="256" y="290" width="170" height="58" rx="29.0" fill="#fff" stroke="#1F2A5C" stroke-width="3"/><path d="M276,347 L290,368 L300,347Z" fill="#fff" stroke="#1F2A5C" stroke-width="3" stroke-linejoin="round"/><rect x="274" y="342" width="28" height="6" fill="#fff"/><text x="341.0" y="329.8" font-size="30" fill="#1F2A5C" font-weight="700" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >出發！</text><ellipse cx="345" cy="600.52" rx="96.60000000000001" ry="9.200000000000001" fill="#000" opacity=".12"/><rect x="398.36" y="406.4" width="7.36" height="110.4" fill="#8A8FA0"/><path d="M402.04,406.4 l-11.040000000000001,-12.88 l12.88,1.84 l-7.36,-14.72" stroke="#FFC93C" stroke-width="4.6000000000000005" fill="none" stroke-linejoin="round"/><rect x="310.04" y="482.76" width="42.32" height="36.800000000000004" rx="11.040000000000001" fill="#17A99B"/><line x1="313.72" y1="484.6" x2="348.68" y2="515.88" stroke="#1F2A5C" stroke-width="4.6000000000000005"/><circle cx="331.2" cy="464.36" r="20.240000000000002" fill="#F6C9A0"/><path d="M310.96,462.336 A20.240000000000002,20.240000000000002 0 0 1 351.44,462.336 Q331.2,449.18 310.96,462.336Z" fill="#3A2E2A"/><circle cx="324.116" cy="467.396" r="1.8216" fill="#1F2A5C"/><circle cx="338.284" cy="467.396" r="1.8216" fill="#1F2A5C"/><path d="M325.128,473.468 Q331.2,478.528 337.272,473.468" stroke="#1F2A5C" stroke-width="1.8216" fill="none" stroke-linecap="round"/><line x1="361.56" y1="510.36" x2="372.6" y2="490.12" stroke="#444" stroke-width="5.5200000000000005"/><ellipse cx="372.6" cy="488.28" rx="5.5200000000000005" ry="14.72" fill="#444"/><line x1="343.16" y1="495.64" x2="368.92" y2="491.96" stroke="#F6C9A0" stroke-width="8.280000000000001" stroke-linecap="round"/><rect x="260.36" y="504.84" width="169.28" height="57.04" rx="25.76" fill="#FF6B5B"/><rect x="280.6" y="512.2" width="55.2" height="9.200000000000001" rx="4.6000000000000005" fill="#fff" opacity=".45"/><rect x="247.48" y="550.84" width="195.04000000000002" height="40.480000000000004" rx="20.240000000000002" fill="#2B2B33"/><rect x="605" y="335" width="250" height="205" rx="30" fill="#DCE6F7" stroke="#1F2A5C" stroke-width="4"/><g transform="translate(665,395) rotate(20)"><rect x="-30" y="-23" width="60" height="46" rx="20" fill="#2B2B33"/><rect x="-23" y="-16" width="46" height="32" rx="13" fill="#FF6B5B"/><circle cx="2" cy="0" r="9" fill="#3A2E2A"/><line x1="14" y1="-7" x2="14" y2="7" stroke="#444" stroke-width="4" stroke-linecap="round"/></g><g transform="translate(775,385) rotate(-30)"><rect x="-30" y="-23" width="60" height="46" rx="20" fill="#2B2B33"/><rect x="-23" y="-16" width="46" height="32" rx="13" fill="#F5A623"/><circle cx="2" cy="0" r="9" fill="#3A2E2A"/><line x1="14" y1="-7" x2="14" y2="7" stroke="#444" stroke-width="4" stroke-linecap="round"/></g><g transform="translate(730,455) rotate(70)"><rect x="-30" y="-23" width="60" height="46" rx="20" fill="#2B2B33"/><rect x="-23" y="-16" width="46" height="32" rx="13" fill="#17A99B"/><circle cx="2" cy="0" r="9" fill="#3A2E2A"/><line x1="14" y1="-7" x2="14" y2="7" stroke="#444" stroke-width="4" stroke-linecap="round"/></g><g transform="translate(660,500) rotate(-15)"><rect x="-30" y="-23" width="60" height="46" rx="20" fill="#2B2B33"/><rect x="-23" y="-16" width="46" height="32" rx="13" fill="#8E6CEF"/><circle cx="2" cy="0" r="9" fill="#3A2E2A"/><line x1="14" y1="-7" x2="14" y2="7" stroke="#444" stroke-width="4" stroke-linecap="round"/></g><g transform="translate(800,500) rotate(200)"><rect x="-30" y="-23" width="60" height="46" rx="20" fill="#2B2B33"/><rect x="-23" y="-16" width="46" height="32" rx="13" fill="#FFC93C"/><circle cx="2" cy="0" r="9" fill="#3A2E2A"/><line x1="14" y1="-7" x2="14" y2="7" stroke="#444" stroke-width="4" stroke-linecap="round"/></g><path d="M625,463 q10,-6 0,-14" stroke="#1F2A5C" stroke-width="3" fill="none" opacity=".5"/><path d="M639,463 q10,-6 0,-14" stroke="#1F2A5C" stroke-width="3" fill="none" opacity=".5"/><line x1="564" y1="466" x2="564" y2="516" stroke="#8A6A4A" stroke-width="5"/><rect x="536" y="420" width="56" height="48" rx="8" fill="#FF6B5B" stroke="#1F2A5C" stroke-width="3"/><text x="564" y="456" font-size="30" fill="#fff" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >A</text><line x1="730" y1="308" x2="730" y2="358" stroke="#8A6A4A" stroke-width="5"/><rect x="702" y="262" width="56" height="48" rx="8" fill="#17A99B" stroke="#1F2A5C" stroke-width="3"/><text x="730" y="298" font-size="30" fill="#fff" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >B</text><line x1="896" y1="466" x2="896" y2="516" stroke="#8A6A4A" stroke-width="5"/><rect x="868" y="420" width="56" height="48" rx="8" fill="#F5A623" stroke="#1F2A5C" stroke-width="3"/><text x="896" y="456" font-size="30" fill="#fff" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >C</text><path d="M730,440 L730,318" stroke="#1F2A5C" stroke-width="3" stroke-dasharray="8 8" opacity=".55"/><path d="M665,395 L592,440" stroke="#1F2A5C" stroke-width="3" stroke-dasharray="8 8" opacity=".55"/><path d="M800,500 L870,462" stroke="#1F2A5C" stroke-width="3" stroke-dasharray="8 8" opacity=".55"/><rect x="635" y="562" width="190" height="42" rx="21.0" fill="#fff" stroke="#1F2A5C" stroke-width="3"/><path d="M718.0,563 L730.0,542 L742.0,563Z" fill="#fff" stroke="#1F2A5C" stroke-width="3" stroke-linejoin="round"/><rect x="716.0" y="562" width="28" height="6" fill="#fff"/><text x="730.0" y="590.92" font-size="22" fill="#1F2A5C" font-weight="700" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >快記起來！</text><rect x="1100" y="300" width="186" height="236" rx="16" fill="#C8894B"/><rect x="1116" y="322" width="154" height="198" rx="6" fill="#fff"/><rect x="1158" y="290" width="70" height="26" rx="8" fill="#9AA0AE"/><text x="1193" y="356" font-size="22" fill="#1F2A5C" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >答案卡</text><circle cx="1140" cy="392" r="13" fill="#FF6B5B"/><text x="1140" y="399" font-size="18" fill="#fff" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >A</text><line x1="1162" y1="400" x2="1256" y2="400" stroke="#B9C0CF" stroke-width="3"/><circle cx="1140" cy="434" r="13" fill="#17A99B"/><text x="1140" y="441" font-size="18" fill="#fff" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >B</text><line x1="1162" y1="442" x2="1256" y2="442" stroke="#B9C0CF" stroke-width="3"/><circle cx="1140" cy="476" r="13" fill="#F5A623"/><text x="1140" y="483" font-size="18" fill="#fff" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >C</text><line x1="1162" y1="484" x2="1256" y2="484" stroke="#B9C0CF" stroke-width="3"/><g transform="translate(1242,440) rotate(35)"><rect x="0" y="-8" width="90" height="16" rx="3" fill="#FFC93C"/><path d="M0,-8 L-18,0 L0,8Z" fill="#E8C9A0"/><rect x="82" y="-8" width="12" height="16" fill="#FF6B5B"/></g><circle cx="1340" cy="330" r="44" fill="#fff" stroke="#FF6B5B" stroke-width="8"/><rect x="1330" y="272" width="20" height="16" rx="4" fill="#FF6B5B"/><text x="1340" y="340" font-size="26" fill="#1F2A5C" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >1:00</text><rect x="996" y="404" width="96" height="48" rx="24.0" fill="#fff" stroke="#1F2A5C" stroke-width="3"/><path d="M1016,451 L1030,472 L1040,451Z" fill="#fff" stroke="#1F2A5C" stroke-width="3" stroke-linejoin="round"/><rect x="1014" y="446" width="28" height="6" fill="#fff"/><text x="1044.0" y="436.64" font-size="24" fill="#1F2A5C" font-weight="700" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >C呢？</text><path d="M1014,604 q0,-46 36,-46 q36,0 36,46Z" fill="#17A99B"/><circle cx="1050" cy="548" r="25" fill="#F6C9A0"/><path d="M1025,545.5 A25,25 0 0 1 1075,545.5 Q1050,529.25 1025,545.5Z" fill="#3A2E2A"/><circle cx="1041.25" cy="551.75" r="2.25" fill="#1F2A5C"/><circle cx="1058.75" cy="551.75" r="2.25" fill="#1F2A5C"/><path d="M1042.5,559.25 Q1050,565.5 1057.5,559.25" stroke="#1F2A5C" stroke-width="2.25" fill="none" stroke-linecap="round"/><path d="M1104,604 q0,-46 36,-46 q36,0 36,46Z" fill="#FF6B5B"/><circle cx="1140" cy="548" r="25" fill="#F6C9A0"/><path d="M1115,545.5 A25,25 0 0 1 1165,545.5 Q1140,529.25 1115,545.5Z" fill="#3A2E2A"/><circle cx="1131.25" cy="551.75" r="2.25" fill="#1F2A5C"/><circle cx="1148.75" cy="551.75" r="2.25" fill="#1F2A5C"/><path d="M1132.5,559.25 Q1140,565.5 1147.5,559.25" stroke="#1F2A5C" stroke-width="2.25" fill="none" stroke-linecap="round"/><path d="M1206,604 q0,-46 36,-46 q36,0 36,46Z" fill="#8E6CEF"/><circle cx="1242" cy="548" r="25" fill="#F6C9A0"/><path d="M1217,545.5 A25,25 0 0 1 1267,545.5 Q1242,529.25 1217,545.5Z" fill="#3A2E2A"/><circle cx="1233.25" cy="551.75" r="2.25" fill="#1F2A5C"/><circle cx="1250.75" cy="551.75" r="2.25" fill="#1F2A5C"/><path d="M1234.5,559.25 Q1242,565.5 1249.5,559.25" stroke="#1F2A5C" stroke-width="2.25" fill="none" stroke-linecap="round"/><path d="M1296,604 q0,-46 36,-46 q36,0 36,46Z" fill="#F5A623"/><circle cx="1332" cy="548" r="25" fill="#F6C9A0"/><path d="M1307,545.5 A25,25 0 0 1 1357,545.5 Q1332,529.25 1307,545.5Z" fill="#3A2E2A"/><circle cx="1323.25" cy="551.75" r="2.25" fill="#1F2A5C"/><circle cx="1340.75" cy="551.75" r="2.25" fill="#1F2A5C"/><path d="M1324.5,559.25 Q1332,565.5 1339.5,559.25" stroke="#1F2A5C" stroke-width="2.25" fill="none" stroke-linecap="round"/><rect x="1485" y="292" width="310" height="232" rx="20" fill="#1F2A5C" stroke="#FFC93C" stroke-width="6"/><text x="1512" y="346" font-size="26" fill="#fff" font-weight="700" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >A 運算</text><path d="M1636,338 l10,11 l20,-24" stroke="#17A99B" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="1512" y="398" font-size="26" fill="#fff" font-weight="700" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >B 問答</text><path d="M1636,390 l10,11 l20,-24" stroke="#17A99B" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="1512" y="450" font-size="26" fill="#fff" font-weight="700" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >C 文字</text><path d="M1638,429 l24,24 M1662,429 l-24,24" stroke="#FF6B5B" stroke-width="7" stroke-linecap="round"/><line x1="1510" y1="470" x2="1770" y2="470" stroke="#4A5AA0" stroke-width="2"/><text x="1512" y="506" font-size="26" fill="#C9D2F2" font-weight="700" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >答對</text><text x="1770" y="508" font-size="32" fill="#FFC93C" font-weight="900" text-anchor="end" font-family="'Noto Sans TC',sans-serif" >2 題 過關</text><rect x="1640" y="548" width="180" height="52" rx="26" fill="#FFC93C" stroke="#1F2A5C" stroke-width="3"/><text x="1710" y="584" font-size="26" fill="#1F2A5C" font-weight="900" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >下一關</text><path d="M1770,574 h28 m-11,-11 l11,11 l-11,11" stroke="#1F2A5C" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="1500" y="560" width="14" height="22" rx="3" fill="#FF6B5B" transform="rotate(25 1500 560)"/><rect x="1550" y="590" width="14" height="22" rx="3" fill="#17A99B" transform="rotate(25 1550 590)"/><rect x="1600" y="556" width="14" height="22" rx="3" fill="#FFC93C" transform="rotate(25 1600 556)"/><rect x="1470" y="280" width="14" height="22" rx="3" fill="#F5A623" transform="rotate(25 1470 280)"/><rect x="80" y="808" width="14" height="40" rx="7" fill="#FFC93C"/><text x="108" y="840" font-size="34" fill="#1F2A5C" font-weight="900" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >三張題目牌長這樣</text><text x="420" y="838" font-size="25" fill="#5B6275" font-weight="500" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >（題目由各關主自備，可多準備幾套輪流使用）</text><rect x="80" y="868" width="560" height="180" rx="22" fill="#fff" stroke="#FF6B5B" stroke-width="6"/><path d="M83,915 v-22 a22,22 0 0 1 22,-22 h510 a22,22 0 0 1 22,22 v22Z" fill="#FF6B5B"/><text x="110" y="904" font-size="28" fill="#fff" font-weight="900" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >關主 A｜四則運算</text><text x="360" y="996" font-size="36" fill="#1F2A5C" font-weight="800" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >□ + □ × □ − □ ＝ ？</text><rect x="680" y="868" width="560" height="180" rx="22" fill="#fff" stroke="#17A99B" stroke-width="6"/><path d="M683,915 v-22 a22,22 0 0 1 22,-22 h510 a22,22 0 0 1 22,22 v22Z" fill="#17A99B"/><text x="710" y="904" font-size="28" fill="#fff" font-weight="900" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >關主 B｜問答題</text><text x="960" y="996" font-size="36" fill="#1F2A5C" font-weight="800" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >Q：＿＿＿＿＿＿＿＿？</text><rect x="1280" y="868" width="560" height="180" rx="22" fill="#fff" stroke="#F5A623" stroke-width="6"/><path d="M1283,915 v-22 a22,22 0 0 1 22,-22 h510 a22,22 0 0 1 22,22 v22Z" fill="#F5A623"/><text x="1310" y="904" font-size="28" fill="#fff" font-weight="900" text-anchor="start" font-family="'Noto Sans TC',sans-serif" >關主 C｜文字記憶</text><text x="1560" y="996" font-size="36" fill="#1F2A5C" font-weight="800" text-anchor="middle" font-family="'Noto Sans TC',sans-serif" >「15–20 字的一句話」</text></g></defs></svg>
-
 <header>
-  <div class="title"><h1>眼明手快</h1><h2>碰碰車情報任務</h2></div>
-  <div class="tagline"><b>只能用眼睛記</b>・下車寫答案</div>
+  <div class="title"><h1>眼明手快</h1><h2>碰碰車情報任務</h2><b>只能用眼睛記！</b></div>
   <div class="hosts">
-    <div class="lbl">本關關主</div>
-    <div class="host"><i class="badge" style="background:var(--red)">A</i>Katherine</div>
+    <div class="lbl">關主</div><div class="host"><i class="badge" style="background:var(--red)">A</i>Katherine</div>
     <div class="host"><i class="badge" style="background:var(--teal)">B</i>Peter</div>
     <div class="host"><i class="badge" style="background:var(--orange)">C</i>Ian</div>
   </div>
 </header>
 
-
-<div class="sec"><div class="num">1</div><h3>遊戲規則</h3><p>四個步驟，跟著做就對了</p></div>
 <div class="steps">
-  <div class="step"><i class="tag" style="background:var(--red)">STEP 1</i>
+  <div class="step"><i class="tag" style="background:var(--red)">1</i>
     <svg viewBox="70 262 400 345"><use href="#art"/></svg>
-    <h4>手機收好・上車出發</h4><p>繫好安全帶，開車中<br>不可拍照或抄寫</p></div>
-  <div class="step"><i class="tag" style="background:var(--teal)">STEP 2</i>
+    <h4>手機收好上車</h4><p>不拍照、不抄寫</p></div>
+  <div class="step"><i class="tag" style="background:var(--teal)">2</i>
     <svg viewBox="530 255 400 352"><use href="#art"/></svg>
-    <h4>邊開邊看・用腦記住</h4><p>關主隨機現身場邊舉牌，<br>看到牌子就要記住</p></div>
-  <div class="step"><i class="tag" style="background:var(--orange)">STEP 3</i>
+    <h4>邊開邊記題目</h4><p>關主在場邊舉牌</p></div>
+  <div class="step"><i class="tag" style="background:var(--orange)">3</i>
     <svg viewBox="990 262 400 345"><use href="#art"/></svg>
-    <h4>下車集合・合寫答案</h4><p>全隊一起討論，<br>1 分鐘內完成答案卡</p></div>
-  <div class="step"><i class="tag" style="background:var(--navy)">STEP 4</i>
+    <h4>下車寫答案</h4><p>全隊討論 1 分鐘</p></div>
+  <div class="step"><i class="tag" style="background:var(--navy)">4</i>
     <svg viewBox="1450 262 400 345"><use href="#art"/></svg>
-    <h4>對答案・答對兩題過關</h4><p>三題答對兩題就過關，<br>完成後前往下一關</p></div>
-  <i class="arrow" style="left:397.2px"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M4,2 l7,6 l-7,6" stroke="#1F2A5C" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i><i class="arrow" style="left:778.5px"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M4,2 l7,6 l-7,6" stroke="#1F2A5C" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i><i class="arrow" style="left:1159.8px"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M4,2 l7,6 l-7,6" stroke="#1F2A5C" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i>
+    <h4>答對 2 題過關</h4><p>前往下一關</p></div>
+  <i class="arrow" style="left:393.8px"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M4,2 l7,6 l-7,6" stroke="#1F2A5C" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i><i class="arrow" style="left:775.5px"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M4,2 l7,6 l-7,6" stroke="#1F2A5C" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i><i class="arrow" style="left:1157.2px"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M4,2 l7,6 l-7,6" stroke="#1F2A5C" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></i>
 </div>
 
-<div class="sec"><div class="num">2</div><h3>過關條件</h3><p>三道題目，答對兩題就過關</p></div>
-<div class="scores">
-  <div class="card" style="border-color:var(--red)">
-    <div class="hd" style="background:var(--red)"><i class="badge" style="color:var(--red)">A</i>關主 A｜四則運算</div>
-    <div class="bd"><div class="top"><div class="how">看懂算式，下車後<br>寫出<em>正確答案</em></div></div>
-      <div class="sample" style="border-color:var(--red)"><small>題目牌長這樣</small>□ + □ × □ − □ ＝ ？</div></div>
-  </div>
-  <div class="card" style="border-color:var(--teal)">
-    <div class="hd" style="background:var(--teal)"><i class="badge" style="color:var(--teal)">B</i>關主 B｜問答題</div>
-    <div class="bd"><div class="top"><div class="how">記住題目，下車後<br>寫出<em>答案</em></div></div>
-      <div class="sample" style="border-color:var(--teal)"><small>題目牌長這樣</small>Q：＿＿＿＿＿＿？</div></div>
-  </div>
-  <div class="card" style="border-color:var(--orange)">
-    <div class="hd" style="background:var(--orange)"><i class="badge" style="color:var(--orange)">C</i>關主 C｜文字記憶</div>
-    <div class="bd"><div class="top"><div class="how">記下牌上 15–20 字，<br><em>一字不差</em>才算對</div></div>
-      <div class="sample" style="border-color:var(--orange)"><small>題目牌長這樣</small>「15–20 字的一句話」</div></div>
-  </div>
-  <div class="board"><div class="t">過關規則</div><ul>
-    <li><i class="ic" style="background:var(--teal)">✓</i>三題中答對兩題（含）以上就過關</li>
-    <li><i class="ic" style="background:var(--orange)">!</i>C 題須一字不差才算答對</li>
-    <li><i class="ic" style="background:var(--red)">!</i>答案卡須在下車後 1 分鐘內完成</li></ul>
-    <div class="ex"><span class="t">範例</span><span>A <svg width="20" height="17" viewBox="0 0 26 22"><path d="M3,11 l7,7 l13,-15" stroke="#17A99B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>B <svg width="20" height="17" viewBox="0 0 26 22"><path d="M3,11 l7,7 l13,-15" stroke="#17A99B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>C <svg width="16" height="16" viewBox="0 0 22 22"><path d="M3,3 l16,16 M19,3 l-16,16" stroke="#FF6B5B" stroke-width="5" stroke-linecap="round"/></svg></span><span>＝ 答對 <b>2 題</b></span></div>
-    <div class="total">答對 2 題 <span><b>過關！</b></span></div>
-  </div>
+<div class="row2">
+  <div class="card" style="border-color:var(--red)"><div class="hd" style="background:var(--red)"><i class="badge" style="color:var(--red)">A</i>四則運算</div><div class="bd">算出答案</div></div>
+  <div class="card" style="border-color:var(--teal)"><div class="hd" style="background:var(--teal)"><i class="badge" style="color:var(--teal)">B</i>問答題</div><div class="bd">寫出答案</div></div>
+  <div class="card" style="border-color:var(--orange)"><div class="hd" style="background:var(--orange)"><i class="badge" style="color:var(--orange)">C</i>文字記憶</div><div class="bd">一字不差</div></div>
+  <div class="pass"><div class="s">3 題答對 <em>2</em> 題</div><div class="b">過關！</div></div>
 </div>
 
-<div class="bottom">
 <div class="notes">
-  <div class="note"><span style="background:var(--gold)">公平</span>全員上車下場玩遊戲；開車中禁止拍照、抄寫，只能用眼睛記。</div>
-  <div class="note"><span style="background:var(--red)">安全</span>繫好安全帶、不可站立、不惡意高速正面衝撞，一律聽從園方工作人員指示。</div>
-</div>
-<div class="go"><div>準備好了嗎？<br><span>手機收好，出發！</span></div></div>
+  <div class="note"><span style="background:var(--gold)">公平</span>禁止拍照、抄寫，只能用眼睛記</div>
+  <div class="note"><span style="background:var(--red)">安全</span>繫好安全帶，聽從工作人員指示</div>
 </div>
 </body></html>
