@@ -15,7 +15,7 @@ header p{margin-left:auto;color:#C9D2F2;font-weight:700;font-size:14px}
 .sec{margin:14px 32px 0;background:#fff;border:3px solid;border-radius:16px;overflow:hidden}
 .hd{color:#fff;font-weight:900;font-size:19px;padding:6px 16px;display:flex;align-items:center;gap:10px}
 .hd .b{width:28px;height:28px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:17px}
-.hd small{margin-left:auto;font-size:13px;font-weight:700;opacity:.95}
+.hd small{margin-left:auto;font-size:13px;font-weight:700}
 table{width:100%;border-collapse:collapse}
 td{padding:5px 12px;font-size:15px;font-weight:500;border-top:1px solid #EEE6D6;vertical-align:middle}
 tr:first-child td{border-top:none}
@@ -26,55 +26,65 @@ td.q b{font-weight:700}
 .two table:first-child{border-right:1px solid #EEE6D6}
 .two td.a{width:auto}
 .math td.q{font-weight:700;letter-spacing:1px;font-size:16px}
+
+ol{list-style:none}
+li{display:flex;gap:10px;align-items:baseline;padding:4px 14px;font-size:15px;border-top:1px solid #EEE6D6}
+li:first-child{border-top:none}
+li .n{width:26px;font-weight:900;color:var(--gray);text-align:right}
+li .q{flex:1}
+li .a{font-weight:900;white-space:nowrap}
+.math ol{columns:2;column-gap:0}
+.math li{break-inside:avoid;font-weight:700;font-size:16px}
+.math li:nth-child(6){border-top:none}
 </style></head><body>
 <header><h1>眼明手快</h1><h2>關主題庫</h2><p>每隊 A、B、C 各抽一題・三題答對兩題過關</p></header>
 
 <div class="sec math" style="border-color:var(--red)">
-  <div class="hd" style="background:var(--red)"><i class="b" style="color:var(--red)">A</i>四則運算<small>先乘除、後加減</small></div>
-  <div class="two"><table>
-    <tr><td class="n">1</td><td class="q">8 + 3 × 4 − 5</td><td class="a">15</td></tr>
-    <tr><td class="n">2</td><td class="q">12 + 6 × 3 − 9</td><td class="a">21</td></tr>
-    <tr><td class="n">3</td><td class="q">25 + 4 × 5 − 7</td><td class="a">38</td></tr>
-    <tr><td class="n">4</td><td class="q">9 + 7 × 6 − 11</td><td class="a">40</td></tr>
-    <tr><td class="n">5</td><td class="q">30 + 8 × 2 − 14</td><td class="a">32</td></tr>
-  </table><table>
-    <tr><td class="n">6</td><td class="q">15 + 9 × 3 − 12</td><td class="a">30</td></tr>
-    <tr><td class="n">7</td><td class="q">6 + 5 × 8 − 19</td><td class="a">27</td></tr>
-    <tr><td class="n">8</td><td class="q">40 + 7 × 4 − 33</td><td class="a">35</td></tr>
-    <tr><td class="n">9</td><td class="q">18 + 6 × 9 − 25</td><td class="a">47</td></tr>
-    <tr><td class="n">10</td><td class="q">50 + 3 × 9 − 46</td><td class="a">31</td></tr>
-  </table></div>
+  <div class="hd" style="background:var(--red)"><i class="b" style="color:var(--red)">A</i>四則運算<small>（先乘除、後加減）</small></div>
+  <ol>
+    <li><span class="n">1.</span><span class="q">8 + 3 × 4 − 5</span><span class="a">答：15</span></li>
+    <li><span class="n">2.</span><span class="q">12 + 6 × 3 − 9</span><span class="a">答：21</span></li>
+    <li><span class="n">3.</span><span class="q">25 + 4 × 5 − 7</span><span class="a">答：38</span></li>
+    <li><span class="n">4.</span><span class="q">9 + 7 × 6 − 11</span><span class="a">答：40</span></li>
+    <li><span class="n">5.</span><span class="q">30 + 8 × 2 − 14</span><span class="a">答：32</span></li>
+  
+    <li><span class="n">6.</span><span class="q">15 + 9 × 3 − 12</span><span class="a">答：30</span></li>
+    <li><span class="n">7.</span><span class="q">6 + 5 × 8 − 19</span><span class="a">答：27</span></li>
+    <li><span class="n">8.</span><span class="q">40 + 7 × 4 − 33</span><span class="a">答：35</span></li>
+    <li><span class="n">9.</span><span class="q">18 + 6 × 9 − 25</span><span class="a">答：47</span></li>
+    <li><span class="n">10.</span><span class="q">50 + 3 × 9 − 46</span><span class="a">答：31</span></li>
+  </ol>
 </div>
 
 <div class="sec" style="border-color:var(--teal)">
-  <div class="hd" style="background:var(--teal)"><i class="b" style="color:var(--teal)">B</i>問答題<small>中文名、英文名都算對</small></div>
-  <table>
-    <tr><td class="n">1</td><td class="q">《獅子王》裡的小獅子叫什麼名字？</td><td class="a">辛巴（Simba）</td></tr>
-    <tr><td class="n">2</td><td class="q">《玩具總動員》裡的牛仔叫什麼名字？</td><td class="a">胡迪（Woody）</td></tr>
-    <tr><td class="n">3</td><td class="q">米老鼠的女朋友叫什麼名字？</td><td class="a">米妮</td></tr>
-    <tr><td class="n">4</td><td class="q">小小兵最愛吃什麼水果？</td><td class="a">香蕉</td></tr>
-    <tr><td class="n">5</td><td class="q">哆啦 A 夢最怕什麼動物？</td><td class="a">老鼠</td></tr>
-    <tr><td class="n">6</td><td class="q">皮卡丘是什麼屬性的寶可夢？</td><td class="a">電</td></tr>
-    <tr><td class="n">7</td><td class="q">海綿寶寶住在什麼水果做的房子裡？</td><td class="a">鳳梨</td></tr>
-    <tr><td class="n">8</td><td class="q">《冰雪奇緣》裡會說話的雪人叫什麼名字？</td><td class="a">雪寶（Olaf）</td></tr>
-    <tr><td class="n">9</td><td class="q">小熊維尼最愛吃什麼？</td><td class="a">蜂蜜</td></tr>
-    <tr><td class="n">10</td><td class="q">熊大和兔兔是哪個通訊軟體的角色？</td><td class="a">LINE</td></tr>
-  </table>
+  <div class="hd" style="background:var(--teal)"><i class="b" style="color:var(--teal)">B</i>問答題<small>（中文名、英文名都算對）</small></div>
+  <ol>
+    <li><span class="n">1.</span><span class="q">《獅子王》裡的小獅子叫什麼名字？</span><span class="a">答：辛巴（Simba）</span></li>
+    <li><span class="n">2.</span><span class="q">《玩具總動員》裡的牛仔叫什麼名字？</span><span class="a">答：胡迪（Woody）</span></li>
+    <li><span class="n">3.</span><span class="q">米老鼠的女朋友叫什麼名字？</span><span class="a">答：米妮</span></li>
+    <li><span class="n">4.</span><span class="q">小小兵最愛吃什麼水果？</span><span class="a">答：香蕉</span></li>
+    <li><span class="n">5.</span><span class="q">哆啦 A 夢最怕什麼動物？</span><span class="a">答：老鼠</span></li>
+    <li><span class="n">6.</span><span class="q">皮卡丘是什麼屬性的寶可夢？</span><span class="a">答：電</span></li>
+    <li><span class="n">7.</span><span class="q">海綿寶寶住在什麼水果做的房子裡？</span><span class="a">答：鳳梨</span></li>
+    <li><span class="n">8.</span><span class="q">《冰雪奇緣》裡會說話的雪人叫什麼名字？</span><span class="a">答：雪寶（Olaf）</span></li>
+    <li><span class="n">9.</span><span class="q">小熊維尼最愛吃什麼？</span><span class="a">答：蜂蜜</span></li>
+    <li><span class="n">10.</span><span class="q">熊大和兔兔是哪個通訊軟體的角色？</span><span class="a">答：LINE</span></li>
+  </ol>
 </div>
 
 <div class="sec" style="border-color:var(--orange)">
-  <div class="hd" style="background:var(--orange)"><i class="b" style="color:var(--orange)">C</i>文字記憶<small>一字不差才算對・字數不含標點</small></div>
-  <table>
-    <tr><td class="n">1</td><td class="q">四是四，十是十，十四是十四，四十是四十</td><td class="a">16 字</td></tr>
-    <tr><td class="n">2</td><td class="q">吃葡萄不吐葡萄皮，不吃葡萄倒吐葡萄皮</td><td class="a">17 字</td></tr>
-    <tr><td class="n">3</td><td class="q">黑化肥發灰，灰化肥發黑，黑化肥發灰會揮發</td><td class="a">18 字</td></tr>
-    <tr><td class="n">4</td><td class="q">扁擔長，板凳寬，板凳沒有扁擔長，扁擔沒有板凳寬</td><td class="a">20 字</td></tr>
-    <tr><td class="n">5</td><td class="q">門口有四輛四輪馬車，你愛拉哪兩輛就拉哪兩輛</td><td class="a">20 字</td></tr>
-    <tr><td class="n">6</td><td class="q">碰碰車，轉圈圈，左邊碰碰右邊碰，碰完下車寫答案</td><td class="a">20 字</td></tr>
-    <tr><td class="n">7</td><td class="q">眼要明，手要快，看到牌子記下來，答對兩題就過關</td><td class="a">20 字</td></tr>
-    <tr><td class="n">8</td><td class="q">碰碰車開得越快，越容易撞到好朋友</td><td class="a">15 字</td></tr>
-    <tr><td class="n">9</td><td class="q">只要團隊合作，再難的關卡也能順利過關</td><td class="a">16 字</td></tr>
-    <tr><td class="n">10</td><td class="q">碰碰車場上有紅黃藍綠紫五種顏色的車</td><td class="a">17 字</td></tr>
-  </table>
+  <div class="hd" style="background:var(--orange)"><i class="b" style="color:var(--orange)">C</i>文字記憶<small>（一字不差才算對・字數不含標點）</small></div>
+  <ol>
+    <li><span class="n">1.</span><span class="q">四是四，十是十，十四是十四，四十是四十</span><span class="a">16 字</span></li>
+    <li><span class="n">2.</span><span class="q">吃葡萄不吐葡萄皮，不吃葡萄倒吐葡萄皮</span><span class="a">17 字</span></li>
+    <li><span class="n">3.</span><span class="q">黑化肥發灰，灰化肥發黑，黑化肥發灰會揮發</span><span class="a">18 字</span></li>
+    <li><span class="n">4.</span><span class="q">扁擔長，板凳寬，板凳沒有扁擔長，扁擔沒有板凳寬</span><span class="a">20 字</span></li>
+    <li><span class="n">5.</span><span class="q">門口有四輛四輪馬車，你愛拉哪兩輛就拉哪兩輛</span><span class="a">20 字</span></li>
+    <li><span class="n">6.</span><span class="q">碰碰車，轉圈圈，左邊碰碰右邊碰，碰完下車寫答案</span><span class="a">20 字</span></li>
+    <li><span class="n">7.</span><span class="q">眼要明，手要快，看到牌子記下來，答對兩題就過關</span><span class="a">20 字</span></li>
+    <li><span class="n">8.</span><span class="q">碰碰車開得越快，越容易撞到好朋友</span><span class="a">15 字</span></li>
+    <li><span class="n">9.</span><span class="q">只要團隊合作，再難的關卡也能順利過關</span><span class="a">16 字</span></li>
+    <li><span class="n">10.</span><span class="q">碰碰車場上有紅黃藍綠紫五種顏色的車</span><span class="a">17 字</span></li>
+  </ol>
 </div>
 </body></html>
